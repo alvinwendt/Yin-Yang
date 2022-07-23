@@ -75,9 +75,11 @@ header {
 .wrapper {
   display: flex;
   flex-wrap: wrap;
-  height: 100vh;
+  height: auto;
   align-items: center;
   justify-content: space-evenly;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 .recipe-card {
@@ -89,6 +91,7 @@ header {
 
   line-height: 1.5;
   height: 37rem;
+  margin-top: 20px;
 }
 
 .recipe-card figure {
@@ -128,4 +131,8 @@ header {
 
 .card-para {
   padding: 20px;
+}
+
+.dish-stats {
+  list-style-type: none;
 }
