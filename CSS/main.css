@@ -1,0 +1,146 @@
+:root {
+  --card-bg-color: #fff;
+  --card-text-color: #070705;
+  --dish-type-color: #0088A9;
+  --global-radius: 16px;
+  --card-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.06);
+}
+body {
+  background-color: lightgoldenrodyellow;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 50px;
+}
+.nav-list,
+a,
+.entry {
+  font-weight: 500;
+  font: size 16px;
+  color: #EDF0F1;
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none;
+}
+.logo {
+  cursor: pointer;
+  height: 5%;
+  width: 5%;
+  margin-right: auto;
+  padding: 8px;
+}
+.nav_links {
+  list-style: none;
+}
+.nav_links li {
+  display: inline-block;
+  padding: 0px, 20px;
+  margin-left: 20px;
+}
+.nav_links li a {
+  transition: all 0.3 ease 0s;
+}
+.nav_links li a:hover {
+  color: #0088A9;
+}
+.entry {
+  padding: 9px 25px;
+  background-color: red;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3 ease 0s;
+  margin-left: 20px;
+}
+.entry:hover {
+  background-color: rgba(52, 20, 52, 0.8);
+}
+header {
+  background-color: #3F4044;
+  color: white;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 20px;
+  margin-bottom: ;
+}
+.recipe-card {
+  background-color: var(--card-bg-color);
+  box-shadow: var(--card-shadow);
+  border-radius: var(--global-radius);
+  color: var(--card-text-color);
+  width: 25rem;
+  line-height: 1.5;
+  height: 37rem;
+  margin-top: 20px;
+}
+.recipe-card figure {
+  width: 100%;
+  margin: 0;
+  height: 12rem;
+  overflow: hidden;
+  border-radius: var(--global-radius) var(--global-radius) 0 0;
+  margin-bottom: 2rem;
+}
+.recipe-card figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.recipe-card h1 {
+  margin-bottom: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.card-meta {
+  margin: 0, 1.5rem, 0.5rem;
+}
+.dish-type {
+  font-weight: 600;
+  letter-spacing: -0.25px;
+  color: #fff;
+  margin: 0;
+  background-color: var(--dish-type-color);
+  padding: 0.25rem 1rem;
+  border-radius: 100px;
+}
+.card-para {
+  padding: 20px;
+}
+.dish-stats {
+  list-style-type: none;
+}
+
+footer{
+  position: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
