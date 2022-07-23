@@ -20,12 +20,16 @@ As a group, pick a theme for your website. Each teammate will make a page consis
 
 ##### Minimum Viable Product
 
-Build a Recipe themed webpage that includes linkable pages with Congruent CSS styling. 
+
+Build a Restaurant themed webpage that includes linkable pages with Congruent CSS styling. 
+
 
 ##### MVP Work:
 
 * [ ] Homepage
   * [ ] Build HTML file
+    * [X] Build Header
+    * [ ] Build Body
   * [ ] Build CSS file
   * [ ] Link Pages
   * [ ] Add images to image folder
