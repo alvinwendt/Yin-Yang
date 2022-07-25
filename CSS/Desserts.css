@@ -68,7 +68,6 @@
     align-items: center;
     justify-content: space-evenly;
     padding-left: 20px;
-    margin-bottom: ;
   }
   .recipe-card {
     background-color: var(--card-bg-color);
@@ -120,28 +119,3 @@
 footer{
     position: fixed;
 }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
