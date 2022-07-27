@@ -111,7 +111,7 @@ a::before {
   content: "";
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/chris.jpg");
   background-position: 0 30%;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: 100%;
   height: 100vh;
   left: 0;
@@ -142,11 +142,16 @@ a:hover::before {
 header {
   background-color: #3f4044;
   color: white;
+  cursor: none;
   /* transform: scale(1, -1); */
 }
 .wrapper {
   width: 100px;
   display: flex;
+  cursor: none;
+}
+img:hover {
+  transform: scale(9);
 }
 .recipe-card {
   background-color: var(--card-bg-color);
@@ -182,6 +187,7 @@ button {
   border-radius: var(--global-radius) var(--global-radius) 0 0;
   margin-bottom: 2rem;
   display: block;
+  cursor: none;
 }
 /* .recipe-card figure img {
   width: 100%;

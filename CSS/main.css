@@ -70,7 +70,7 @@ header {
   align-items: center;
   justify-content: space-evenly;
   padding-left: 20px;
-  margin-bottom: ;
+  margin-bottom: 0;
 }
 .recipe-card {
   background-color: var(--card-bg-color);
@@ -146,7 +146,4 @@ footer {
   border: none;
   border-radius: 50px;
   color: white;
-}
-
-#hometext {
 }
