@@ -1,0 +1,297 @@
+:root {
+  --card-bg-color: rgba(255, 255, 255, 0.5);
+  --card-text-color: #070705;
+  --dish-type-color: #0088a9;
+  --global-radius: 16px;
+  --card-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.06);
+}
+body {
+  font-family: "Monsieur La Doulaise", sans-serif;
+  padding-bottom: 50px;
+  filter: invert(100%);
+  background-image: url("https://64.media.tumblr.com/66bff18fb2e749bfc664f3fbc1c9ca58/tumblr_pfdiwlHIZC1rh2n3qo1_r1_1280.gif");
+  color: #fff;
+  display: flex;
+  font-family: "Monsieur La Doulaise", sans-serif;
+  font-size: 2em;
+  color: rgb(128, 0, 0);
+  background-color: rgb(133, 248, 148);
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: rgb(204, 102, 0);
+  }
+}
+
+.nav-list,
+a {
+  font-weight: 500;
+  font: size 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.entry {
+  position: fixed;
+  font-weight: 500;
+  font: size 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-decoration: none;
+  background-color: lightgreen;
+}
+
+.logo {
+  cursor: pointer;
+  height: 5%;
+  width: 5%;
+  margin-right: auto;
+  padding: 8px;
+}
+.nav_links {
+  list-style: none;
+}
+.nav_links li {
+  display: flex;
+  padding: 0px, 20px;
+  margin-left: 20px;
+}
+.nav_links li a {
+  transition: all 0.3 ease 0s;
+  margin-bottom: 100px;
+}
+.nav_links li a:hover {
+  color: #0088a9;
+}
+
+.nav-list {
+  transform: scale(-1, 1);
+  position: absolute;
+  animation: move-left-to-right linear 12.5s infinite;
+}
+
+/* use this one to move from left to right direction */
+@keyframes move-left-to-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* use this one to move from right to left direction */
+
+a:nth-child(1) {
+  justify-content: flex-end;
+}
+
+a:nth-child(2) {
+  justify-content: center;
+  align-items: center;
+}
+
+a:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+a:nth-child(4) {
+  justify-content: flex-end;
+}
+
+a::before {
+  content: "";
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/chris.jpg");
+  background-position: 0 30%;
+  background-repeat: repeat;
+  background-size: 100%;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  bottom: 0vh;
+  width: 100vw;
+  transform: translateY(100%);
+  transition: transform 0.3s;
+  filter: invert(100%);
+}
+
+a:hover::before {
+  transform: translateY(0px);
+}
+
+.entry {
+  padding: 9px 25px;
+  background-color: red;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3 ease 0s;
+  margin-left: 20px;
+}
+.entry:hover {
+  background-color: rgba(52, 20, 52, 0.8);
+}
+header {
+  background-color: #3f4044;
+  color: white;
+  cursor: none;
+  /* transform: scale(1, -1); */
+}
+.wrapper {
+  width: 100px;
+  display: flex;
+  cursor: none;
+}
+img:hover {
+  transform: scale(9);
+}
+.recipe-card {
+  background-color: var(--card-bg-color);
+  box-shadow: var(--card-shadow);
+  border-radius: var(--global-radius);
+  color: rgba(202, 202, 202, 0.562);
+  width: -25px;
+  display: flex;
+  line-height: 1.5;
+  height: -37rem;
+}
+
+button {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: red;
+  color: black;
+  border: 1px solid black;
+  border-radius: 0.5em;
+  font-size: 1.5em;
+  padding: 0 0.75em;
+  /* transform: scale(1, -1); */
+  animation-name: mover;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.recipe-card figure {
+  width: 100%;
+  margin: 0;
+  height: 12rem;
+  border-radius: var(--global-radius) var(--global-radius) 0 0;
+  margin-bottom: 2rem;
+  display: block;
+  cursor: none;
+}
+/* .recipe-card figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+.recipe-card h1 {
+  margin-bottom: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.card-meta {
+  margin: 0, 1.5rem, 0.5rem;
+}
+.dish-type {
+  font-weight: 600;
+  letter-spacing: -0.25px;
+  color: #fff;
+  margin: 0;
+  background-color: var(--dish-type-color);
+  padding: 0.25rem 1rem;
+  border-radius: 100px;
+  transform: scale(1, -1);
+}
+.card-para {
+  padding: 20px;
+}
+.dish-stats {
+  list-style-type: none;
+  transform: scale(1, -1);
+}
+
+footer {
+  position: fixed;
+}
+
+:root {
+  --mainColor: #ff9800;
+}
+
+p {
+  grid-column: 2;
+}
+
+a {
+  color: var(--mainColor);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    grid-template-columns: 500px 2fr 0.5em;
+  }
+
+  a::before {
+    background-position: 0;
+    background-size: 250px;
+    height: 200px;
+    transform: translateY(200px);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    grid-template-columns: 350px 2fr 15px;
+  }
+
+  a::before {
+    background-size: 300px;
+    height: 250px;
+    transform: translateY(250px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+}
+@keyframes mover {
+  0% {
+    background-color: red;
+    left: 500px;
+    top: 0px;
+  }
+  25% {
+    background-color: gold;
+    left: 500px;
+    top: 500px;
+  }
+  50% {
+    background-color: lime;
+    left: 0px;
+    top: 500px;
+  }
+  75% {
+    background-color: purple;
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    background-color: orange;
+    left: 500px;
+    top: 0px;
+  }
+}
