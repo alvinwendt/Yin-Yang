@@ -26,41 +26,41 @@ Build a Restaurant themed webpage that includes linkable pages with Congruent CS
 
 ##### MVP Work:
 
-* [x ] Homepage
-  * [x ] Build HTML file
+* [x] Homepage
+  * [x] Build HTML file
     * [X] Build Header
-    * [x ] Build Body
-  * [x ] Build CSS file
-  * [x ] Link Pages
-  * [x ] Add images to image folder
-* [x ] Entrees Page
-  * [x ] Build HTML file
-    * [x ] Add Images
-    * [x ] Add Copy (Text)
-  * [x ] Build CSS file
-  * [x ] Add images to image folder
-* [x ] Appetizers Page
-  * [x ] Build HTML file
-    * [x ] Add Images
-    * [x ] Add Copy (Text)
-  * [x ] Build CSS file
-  * [ x] Add images to image folder
-* [x ] Desserts Page
-  * [x ] Build HTML file
-    * [x ] Add Images
-    * [x ] Add Copy (Text)
-  * [x ] Build CSS file
-  * [x ] Add images to image folder
-* [x ] Drinks Page
-  * [x ] Build HTML file
-    * [x ] Add Images
-    * [x ] Add Copy (Text)
-  * [x ] Build CSS file
-  * [x ] Add images to image folder
-* [x ] Bad Drinks Page
-* [x ] Bad Entrees Page
-* [x ] Bad Appetizers Page
-* [x ] Bad Desserts Page
+    * [x] Build Body
+  * [x] Build CSS file
+  * [x] Link Pages
+  * [x] Add images to image folder
+* [x] Entrees Page
+  * [x] Build HTML file
+    * [x] Add Images
+    * [x] Add Copy (Text)
+  * [x] Build CSS file
+  * [x] Add images to image folder
+* [x] Appetizers Page
+  * [x] Build HTML file
+    * [x] Add Images
+    * [x] Add Copy (Text)
+  * [x] Build CSS file
+  * [x] Add images to image folder
+* [x] Desserts Page
+  * [x] Build HTML file
+    * [x] Add Images
+    * [x] Add Copy (Text)
+  * [x] Build CSS file
+  * [x] Add images to image folder
+* [x] Drinks Page
+  * [x] Build HTML file
+    * [x] Add Images
+    * [x] Add Copy (Text)
+  * [x] Build CSS file
+  * [x] Add images to image folder
+* [x] Bad Drinks Page
+* [x] Bad Entrees Page
+* [x] Bad Appetizers Page
+* [x] Bad Desserts Page
   
 
 ##### Backlog Features:
