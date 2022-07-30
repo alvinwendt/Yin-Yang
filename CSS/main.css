@@ -1,13 +1,13 @@
 :root {
   --card-bg-color: #fff;
   --card-text-color: #070705;
-  --dish-type-color: #0088A9;
+  --dish-type-color: #0088a9;
   --global-radius: 16px;
   --card-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.06);
 }
 body {
   background-color: lightgoldenrodyellow;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   padding-bottom: 50px;
 }
 .nav-list,
@@ -15,7 +15,7 @@ a,
 .entry {
   font-weight: 500;
   font: size 16px;
-  color: #EDF0F1;
+  color: #edf0f1;
   text-decoration: none;
 }
 header {
@@ -43,7 +43,7 @@ header {
   transition: all 0.3 ease 0s;
 }
 .nav_links li a:hover {
-  color: #0088A9;
+  color: #0088a9;
 }
 .entry {
   padding: 9px 25px;
@@ -57,10 +57,12 @@ header {
 .entry:hover {
   background-color: rgba(52, 20, 52, 0.8);
 }
+
 header {
-  background-color: #3F4044;
+  background-color: #3f4044;
   color: white;
 }
+
 .wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -68,7 +70,7 @@ header {
   align-items: center;
   justify-content: space-evenly;
   padding-left: 20px;
-  margin-bottom: ;
+  margin-bottom: 0;
 }
 .recipe-card {
   background-color: var(--card-bg-color);
@@ -117,30 +119,31 @@ header {
   list-style-type: none;
 }
 
-footer{
+footer {
   position: fixed;
 }
 
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
 
+.buttoncontainer {
+  margin-top: 30px;
+  font-weight: 500;
+  font: size 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.enter {
+  padding: 9px 25px;
+  font-weight: 700;
+  background-color: red;
+  border: none;
+  border-radius: 50px;
+  color: white;
+}
