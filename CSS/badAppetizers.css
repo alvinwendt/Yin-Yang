@@ -1,29 +1,32 @@
 :root {
   --card-bg-color: #fff;
   --card-text-color: #070705;
-  --dish-type-color: #0088a9;
+  --dish-type-color: lightgreen;
   --global-radius: 16px;
   --card-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.06);
 }
+
 body {
-  background-color: lightgoldenrodyellow;
-  font-family: "Poppins", sans-serif;
-  padding-bottom: 50px;
+  background-color: lightgreen;
+  font-family: 'Poppins', sans-serif;
 }
+
 .nav-list,
 a,
 .entry {
   font-weight: 500;
   font: size 16px;
-  color: #edf0f1;
+  color: lightgreen;
   text-decoration: none;
 }
+
 header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   text-decoration: none;
 }
+
 .logo {
   cursor: pointer;
   height: 5%;
@@ -31,57 +34,67 @@ header {
   margin-right: auto;
   padding: 8px;
 }
+
 .nav_links {
   list-style: none;
 }
+
 .nav_links li {
   display: inline-block;
   padding: 0px, 20px;
   margin-left: 20px;
 }
+
 .nav_links li a {
   transition: all 0.3 ease 0s;
 }
+
 .nav_links li a:hover {
   color: #0088a9;
 }
+
 .entry {
   padding: 9px 25px;
-  background-color: red;
-  border: none;
-  border-radius: 50px;
+  /* background-color: red;
+  border: none; */
+  /* border-radius: 50px;
   cursor: pointer;
-  transition: all 0.3 ease 0s;
+  transition: all 0.3 ease 0s; */
   margin-left: 20px;
 }
-.entry:hover {
+
+/* .entry:hover {
   background-color: rgba(52, 20, 52, 0.8);
-}
+} */
 
 header {
   background-color: #3f4044;
   color: white;
 }
 
-.wrapper {
+/* .wrapper {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   height: auto;
   align-items: center;
   justify-content: space-evenly;
   padding-left: 20px;
-  margin-bottom: 0;
-}
-.recipe-card {
+  padding-bottom: 20px;
+} */
+
+/* .recipe-card {
   background-color: var(--card-bg-color);
   box-shadow: var(--card-shadow);
   border-radius: var(--global-radius);
   color: var(--card-text-color);
   width: 25rem;
-  line-height: 1.5;
+  text-decoration: underline overline;
+  line-height: 2.5;
   height: 37rem;
   margin-top: 20px;
-}
+} */
+
 .recipe-card figure {
   width: 100%;
   margin: 0;
@@ -90,19 +103,28 @@ header {
   border-radius: var(--global-radius) var(--global-radius) 0 0;
   margin-bottom: 2rem;
 }
+
 .recipe-card figure img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .recipe-card h1 {
   margin-bottom: 2rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
+
 .card-meta {
   margin: 0, 1.5rem, 0.5rem;
+  transition: background-color 2s ease-out 100ms;
 }
+
+.card-meta:hover {
+  background-color: #ff1493;
+}
+
 .dish-type {
   font-weight: 600;
   letter-spacing: -0.25px;
@@ -111,39 +133,69 @@ header {
   background-color: var(--dish-type-color);
   padding: 0.25rem 1rem;
   border-radius: 100px;
+
+  text-decoration: line-through;
 }
+
 .card-para {
   padding: 20px;
 }
+
 .dish-stats {
   list-style-type: none;
 }
 
-footer {
-  position: fixed;
+.hover-1 {
+  /* line-height: 1.2em; */
+  color: #0000;
+  text-shadow: 0 0 #000, 0 1.2em #1095c1;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.hover-1:hover {
+  text-shadow: 0 -1.2em #000, 0 0 #1095c1;
 }
 
-.maincontainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
+/* Animation property */
+button {
+  animation: wiggle 2s linear infinite;
 }
 
-.buttoncontainer {
-  margin-top: 30px;
-  font-weight: 500;
-  font: size 16px;
-  color: #edf0f1;
-  text-decoration: none;
+/* Keyframes */
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
 }
 
-.enter {
-  padding: 9px 25px;
-  font-weight: 700;
-  background-color: red;
+button {
+  background: #444;
+  background: linear-gradient(top, #555, #333);
   border: none;
-  border-radius: 50px;
-  color: white;
+  border-top: 3px solid orange;
+  border-radius: 0 0 0.2em 0.2em;
+  color: #fff;
+  font-family: Helvetica, Arial, Sans-serif;
+  font-size: 1em;
+  transform-origin: 50% 5em;
 }
