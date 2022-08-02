@@ -55,24 +55,24 @@ header {
 
 .entry {
   padding: 9px 25px;
-  background-color: red;
-  border: none;
-  border-radius: 50px;
+  /* background-color: red;
+  border: none; */
+  /* border-radius: 50px;
   cursor: pointer;
-  transition: all 0.3 ease 0s;
+  transition: all 0.3 ease 0s; */
   margin-left: 20px;
 }
 
-.entry:hover {
+/* .entry:hover {
   background-color: rgba(52, 20, 52, 0.8);
-}
+} */
 
 header {
   background-color: #3f4044;
   color: white;
 }
 
-.wrapper {
+/* .wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -81,19 +81,19 @@ header {
   justify-content: space-evenly;
   padding-left: 20px;
   padding-bottom: 20px;
-}
+} */
 
-.recipe-card {
+/* .recipe-card {
   background-color: var(--card-bg-color);
   box-shadow: var(--card-shadow);
   border-radius: var(--global-radius);
   color: var(--card-text-color);
   width: 25rem;
-
-  line-height: 1.5;
+  text-decoration: underline overline;
+  line-height: 2.5;
   height: 37rem;
   margin-top: 20px;
-}
+} */
 
 .recipe-card figure {
   width: 100%;
@@ -118,6 +118,11 @@ header {
 
 .card-meta {
   margin: 0, 1.5rem, 0.5rem;
+  transition: background-color 2s ease-out 100ms;
+}
+
+.card-meta:hover {
+  background-color: #ff1493;
 }
 
 .dish-type {
@@ -128,6 +133,8 @@ header {
   background-color: var(--dish-type-color);
   padding: 0.25rem 1rem;
   border-radius: 100px;
+
+  text-decoration: line-through;
 }
 
 .card-para {
@@ -136,4 +143,59 @@ header {
 
 .dish-stats {
   list-style-type: none;
+}
+
+.hover-1 {
+  /* line-height: 1.2em; */
+  color: #0000;
+  text-shadow: 0 0 #000, 0 1.2em #1095c1;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.hover-1:hover {
+  text-shadow: 0 -1.2em #000, 0 0 #1095c1;
+}
+
+/* Animation property */
+button {
+  animation: wiggle 2s linear infinite;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+button {
+  background: #444;
+  background: linear-gradient(top, #555, #333);
+  border: none;
+  border-top: 3px solid orange;
+  border-radius: 0 0 0.2em 0.2em;
+  color: #fff;
+  font-family: Helvetica, Arial, Sans-serif;
+  font-size: 1em;
+  transform-origin: 50% 5em;
 }

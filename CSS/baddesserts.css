@@ -6,13 +6,13 @@
   --card-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.06);
 }
 body {
-  font-family: "Monsieur La Doulaise", sans-serif;
+  font-family: 'Monsieur La Doulaise', sans-serif;
   padding-bottom: 50px;
   filter: invert(100%);
-  background-image: url("https://64.media.tumblr.com/66bff18fb2e749bfc664f3fbc1c9ca58/tumblr_pfdiwlHIZC1rh2n3qo1_r1_1280.gif");
+  background-image: url('https://64.media.tumblr.com/66bff18fb2e749bfc664f3fbc1c9ca58/tumblr_pfdiwlHIZC1rh2n3qo1_r1_1280.gif');
   color: #fff;
   display: flex;
-  font-family: "Monsieur La Doulaise", sans-serif;
+  font-family: 'Monsieur La Doulaise', sans-serif;
   font-size: 2em;
   color: rgb(128, 0, 0);
   background-color: rgb(133, 248, 148);
@@ -108,8 +108,8 @@ a:nth-child(4) {
 }
 
 a::before {
-  content: "";
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/chris.jpg");
+  content: '';
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/chris.jpg');
   background-position: 0 30%;
   background-repeat: repeat;
   background-size: 100%;
