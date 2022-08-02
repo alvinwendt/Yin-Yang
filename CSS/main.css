@@ -58,6 +58,20 @@ header {
   background-color: rgba(52, 20, 52, 0.8);
 }
 
+div{
+display: flex;
+flex-direction: column;
+align-items:center;
+}
+
+#homepage{
+  margin-top: 20px;
+}
+
+#enternow {
+margin-top: 20px;
+}
+
 header {
   background-color: #3f4044;
   color: white;
